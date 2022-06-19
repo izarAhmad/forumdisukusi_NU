@@ -244,7 +244,7 @@
             >
               <img
                 
-               src="{{asset('Admin/images/Nahdlatul_ulama.jpg')}}"
+               src="{{asset('Admin/images/nu.jpg')}}"
                alt="NU"
                width="200"
                height="200"
