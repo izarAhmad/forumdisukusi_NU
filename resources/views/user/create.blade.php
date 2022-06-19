@@ -1,6 +1,6 @@
 @extends('layout.home')
 @section('header')
-    <script src="https://cdn.tiny.cloud/1/ww3b1mbzh7h81ythi8uxn2ngykqtf5idot9ycql9y71j4qg5/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/ww3b1mbzh7h81ythi8uxn2ngykqtf5idot9ycql9y71j4qg5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 @endsection
 @section('content')
 <main class="main">
@@ -125,8 +125,8 @@
             >
               <img
                 
-               src="{{asset('img/Nahdlatul_ulama.jpg')}}"
-               alt="Jessica's photo"
+               src="{{asset('Admin/images/nu.jpg')}}"
+               alt=""
                width="200"
                height="200"
                
@@ -169,8 +169,8 @@
         var editor_config = {
         path_absolute : "/",
         selector: "textarea",
-        plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed paste image dropped file pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media',
+        plugins: 'image media',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media ',
         relative_urls: false,
         file_browser_callback : function(field_name, url, type, win) {
         var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
