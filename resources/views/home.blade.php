@@ -99,7 +99,7 @@
       <div class="row workingspace">
         <div class="col-lg-6">
           <img
-            src="../public/img/Nahdlatul_Ulama.jpg" 
+            src="{{asset('Admin/images/Nahdlatul_ulama.jpg')}}" 
             alt="Working Space"
             class="img-fluid"
             data-aos="zoom-in"

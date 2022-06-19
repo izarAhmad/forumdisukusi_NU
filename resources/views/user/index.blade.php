@@ -244,8 +244,8 @@
             >
               <img
                 
-               src="public/img/Nahdlatul_Ulama.jpg"
-               alt="Jessica's photo"
+               src="{{asset('Admin/images/Nahdlatul_ulama.jpg')}}"
+               alt="NU"
                width="200"
                height="200"
                
