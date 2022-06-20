@@ -56,8 +56,7 @@
 
 <!-- jQuery -->
 
-@include('sweetalert::alert')
-@yield('footer')
+
 </body>
 <script src="{{ asset('user/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
