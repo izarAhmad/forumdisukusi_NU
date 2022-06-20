@@ -16,22 +16,30 @@
     @yield('header')
     </head>
     <!-- Sidebar -->
-    
-    {{--<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-            <img src="
-                            {{auth()->user()->profile->getAvatar()}}
-            " class="img-circle elevation-2" alt="User Image">
-            </div>
-            <div class="info">
-            <a href="#" class="d-block">{{Auth()->user()->profile->nama_lengkap}}</a>
-            </div>
-			</ul>--}}
+    @include('layout.include.sidebar')
         <!-- /.sidebar -->
         <section id="content">
     <!-- Navbar -->
-    @include('layout.include.navbar')
+    <nav>
+    <i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link ">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="{{ Auth::user()->profile->getAvatar() }}">
+			</a>
+            <small> {{ Auth::user()->name }}</small>
+		</nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
