@@ -94,7 +94,7 @@
           </div>
           <hr>
           <div class="text-center">
-          <h6>Bergabung lah sekarang untuk memulai semua</h6>
+          <h6>Untuk bisa akses dan menjadi anggota silahkan sign up</h6>
           <button class="btn-signup">
           <a href="/register">Sign Up</a>
         </button>
