@@ -20,7 +20,7 @@
         <!-- /.sidebar -->
         <section id="content">
     <!-- Navbar -->
-    
+    @include('layout.include.navbar')
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
