@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="{{asset('Admin/images/signin-image.jpg')}}" alt="sing up image"></figure>
+                        <figure><img src="{{asset('Admin/images/login-santri.jpeg')}}" alt="sing up image"></figure>
                         <a href="/register" class="signup-image-link">Create an account</a>
                     </div>
 
@@ -15,7 +15,7 @@
                             @csrf
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="email" id="your_name" placeholder="Your Name"/ value="{{old('email')}}">
+                                <input type="text" name="email" id="Email" placeholder="Email"/ value="{{old('email')}}">
                             </div>
                             @error('email')
                                 <div class="invalid-feedback mt-2" style="margin-top: -8%">{{ $message }}</div>
@@ -41,7 +41,7 @@
                             </div>
                              @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('Lupa Password?') }}
                                     </a>
                                 @endif
                         </form>

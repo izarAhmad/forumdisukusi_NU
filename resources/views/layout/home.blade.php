@@ -55,6 +55,10 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+
+@include('sweetalert::alert')
+@yield('footer')
+</body>
 <script src="{{ asset('user/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('user/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -64,7 +68,4 @@
 <script src="{{ asset('user/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('user/js/demo.js') }}"></script>
-@include('sweetalert::alert')
-@yield('footer')
-</body>
 </html>

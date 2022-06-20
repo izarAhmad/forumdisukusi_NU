@@ -25,7 +25,7 @@
             <a
               class="nav-item nav-link btn btn-success text-white tombol"
               href="/login"
-              >Join Us</a
+              >Login</a
             >
           </div>
         </div>
@@ -41,6 +41,7 @@
         </h1>
         
       </div>
+      
     </div>
     <!-- akhir Jumbotron -->
 
@@ -108,17 +109,14 @@
           />
         </div>
         <div
-          class="col-lg-5"
+          class="col-lg-6"
           data-aos="fade-down"
           data-aos-delay="200"
           data-aos-duration="500"
         >
           <h2>About <span>US</span></h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-            corrupti doloremque deserunt quos nemo! Nesciunt consequatur odio
-            quos voluptas iusto, sequi iure vitae omnis quam dolore fuga cumque
-            mollitia obcaecati?
+          NU didirikan pada 31 Januari 1926 di Kota Surabaya oleh seorang ulama dan para pedagang untuk membela praktik Islam tradisionalis (sesuai dengan mazhab Syafi'i) dan kepentingan ekonomi anggotanya. Pandangan keagamaan NU dianggap "tradisionalis" karena menoleransi budaya lokal selama tidak bertentangan dengan ajaran Islam. Hal ini membedakannya dengan organisasi Islam terbesar kedua di Indonesia, Muhammadiyah, yang dianggap "reformis" karena membutuhkan interpretasi yang lebih literal terhadap Al-Qur'an dan Sunnah.
           </p>
         </div>
       </div>

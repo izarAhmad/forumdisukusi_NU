@@ -139,7 +139,7 @@
             >
               <img
                 
-               src="{{asset('img/Nahdlatul_ulama.jpg')}}"
+               src="{{asset('Admin/images/nu.jpg')}}"
                alt="Jessica's photo"
                width="200"
                height="200"
