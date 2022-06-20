@@ -92,7 +92,16 @@
               <p>Donasikan Harta Anda Untuk Kepentingan Agama.</p>
             </div>
           </div>
+          <hr>
+          <div class="text-center">
+          <h6>Bergabung lah sekarang untuk memulai semua</h6>
+          <button class="btn-signup">
+          <a href="/register">Sign Up</a>
+        </button>
+          </div>
+          
         </div>
+        
       </div>
       <!-- akhir info panel -->
 

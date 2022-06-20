@@ -56,15 +56,16 @@
 
 <!-- jQuery -->
 
-
-</body>
 <script src="{{ asset('user/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('user/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- overlayScrollbars -->
 <script src="{{ asset('user/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset('user/js/adminlte.min.js') }}"></script>
-<!-- AdminLTE for demo purposes -->
 <script src="{{ asset('user/js/demo.js') }}"></script>
+<script src="{{ asset('user/js/adminlte.min.js') }}"></script>
+</body>
+
+<!-- AdminLTE for demo purposes -->
+
 </html>
