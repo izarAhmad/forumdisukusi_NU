@@ -82,8 +82,8 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">email</label>
-                        <input type="text" class="form-control  @error('email') is-invalid @enderror" name="email" id="exampleInputPassword1" placeholder="Masukan pertanyaan"
-                        value="{{$user->email}}">
+                        <input  type="text" class="form-control  @error('email') is-invalid @enderror" name="email" id="exampleInputPassword1" placeholder="Masukan pertanyaan"
+                        value="{{$user->email}}" disabled>
                         @error('email')
                         <div class="invalid-feedback mt-2">{{ $message }}</div>
                         @enderror
