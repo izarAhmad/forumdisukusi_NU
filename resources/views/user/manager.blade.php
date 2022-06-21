@@ -168,14 +168,14 @@
                alt="Jessica's photo"
                width="200"
                height="200"
-               
+              
               /> 
             </button>
-             
+          
             <h1 class="profile-main__name">Forum Diskusi NU</h1>
           </div>
           <hr>
-          
+        
          
           <ul class="statistics">
             <li class="statistics__entry">

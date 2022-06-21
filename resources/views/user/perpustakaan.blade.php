@@ -1,12 +1,9 @@
 @extends('layout.home')
 @section('content')
-<main class="main">
-     
-        <header class="header">
-         
+    <main class="main"> 
+        <header class="header">    
           <div class="header__wrapper">
-            <form action="/perpustakaan/search"   class="search" method="GET">
-              	
+            <form action="/perpustakaan/search"   class="search" method="GET">   	
               <button class="search__button focus--box-shadow" type="submit" >
                 <svg
                   class="search__icon"
@@ -44,58 +41,48 @@
         <h2>File Kitab</h2>
         <br>
         <section class="section">
-        
             <div class="project">
                  <div class="project__item">
-                    
-                        <div class="card card-success card-outline">
-                    
+                     <div class="card card-success card-outline">
                         <div class="card-body">
-                            
-                            
-                        
+                          <table class="table table-bordered table-responsive">
+                              <thead>
+                                  <tr>
+                                      <th width="100%">Nama Kitab</th>
+                                      <th  width="100%">Download</th>   
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  @if($medias->count())
+                                      @foreach($medias as $media)
+                                          <tr> 
+                                              <td>  {{ $media->name }}</td>
+                                              <td align="center"><a href="{{ url('uploads/' . $media->file) }}" download><img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/50/000000/external-download-seo-and-web-wanicon-lineal-color-wanicon.png"/></a></</td>  
+                                          </tr>
+                                      @endforeach
+                                  @else
+                                      <tr>
+                                          <td align="center" colspan="3">Belum ada file</td>
+                                      </tr>
+                                  @endif
+                              </tbody>
+                          </table>
+                      
+                        </div>
 
-                        <table class="table table-bordered table-responsive">
-                            <thead>
-                                <tr>
-                                    <th width="100%">Nama Kitab</th>
-                                    
-                                    <th  width="100%">Download</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @if($medias->count())
-                                    @foreach($medias as $media)
-                                        <tr>
-                                            
-                                            <td>  {{ $media->name }}</td>
-                                            <td align="center"><a href="{{ url('uploads/' . $media->file) }}" download><img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/50/000000/external-download-seo-and-web-wanicon-lineal-color-wanicon.png"/></a></</td>
-                                            
-                                        </tr>
-                                    @endforeach
-                                @else
-                                    <tr>
-                                        <td align="center" colspan="3">Belum ada file</td>
-                                    </tr>
-                                @endif
-                            </tbody>
-                        </table>
-                        </div>
-                        <div class="card-footer clearfix">
-                                        <ul class="pagination pagination-sm m-0 float-right text-secondary">
-                                        {{$medias->links()}}
-                                        </ul>
-                                    </div>
-                        </div>
+                            <div class="card-footer clearfix">
+                                            <ul class="pagination pagination-sm m-0 float-right text-secondary">
+                                            {{$medias->links()}}
+                                            </ul>
+                              </div>
+                      </div>
                     </div>
-                
+                </div>
             </div>
-       
         </section>
-        </main>
+      </main>
         <div class="mobile-display">
-<aside class="aside">
+          <aside class="aside">
         <section class="section">
           <div class="aside__control">
             <button
@@ -117,7 +104,7 @@
               class="aside__button aside__button--notification focus--box-shadow"
               type="button"
               aria-label="You have new feedback"
-              
+            
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +116,6 @@
                 />
                  
               </svg>
-             
             </button>
           </div>
           <div class="profile-main">
@@ -143,14 +129,12 @@
                alt="Jessica's photo"
                width="200"
                height="200"
-               
               /> 
             </button>
              
             <h1 class="profile-main__name">Forum Diskusi NU</h1>
           </div>
           <hr>
-          
          
           <ul class="statistics">
             <li class="statistics__entry">
@@ -170,12 +154,11 @@
             <p class="banner__description">Tanyakan Masalah Agamamu</p>
             <a href="/forum/create" ><button class="banner__button" type="button"> 
               Tanya
-             
-            </button> </a>
+            </button> 
+            </a>
           </div>
         </section>
       </aside>
         </div>
-        
 @include('sweetalert::alert')
 @endsection
