@@ -146,14 +146,14 @@
                       
                       <li class="photo__item">
                         <img src="{{$tanya->user->profile->getAvatar()}}"
-                          alt="Jessica's photo"
+                          alt="profile"
                         />
                       </li>
                     </ul>
                   </div>
                   <div class="project__element project__date">
                     <time class="date" datetime="2020-05-05T10:00:00"
-                      >Created  at {{$tanya->created_at->diffForHumans()}}</time
+                      >Di tanya {{$tanya->created_at->diffForHumans()}}</time
                     >
                   </div>
                   <div class="project__element project__status">
