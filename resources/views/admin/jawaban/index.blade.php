@@ -85,7 +85,7 @@
                         <th style="width: 10px">no</th>
                         <th>Nama User</th>
                         <th>judul</th>
-                        <th>Pertanyaan</th>
+                        <!-- <th>Pertanyaan</th> -->
                         <th>Jawaban</th>
                         <th style="width: 400px" >Tags</th>
                         <th style="width: 280px">Action</th>
@@ -97,7 +97,7 @@
                             <td>{{$loop->iteration}}</td>
                             <td>{{$jwb->user->profile->nama_lengkap}}</td>
                             <td>{!!$jwb->pertanyaan->judul!!}</td>
-                            <td>{!!$jwb->pertanyaan->isi!!}</td>
+                            <!-- <td>{!!$jwb->pertanyaan->isi!!}</td> -->
                             <td>{!!$jwb->isi!!}</td>
                             <td>
                                 @foreach ($jwb->pertanyaan->tags as $tag)
