@@ -189,9 +189,6 @@
             </li>
             @endforeach
           </ul>
-
-          
-         
          <br>
                     <ul class="pagination pagination-sm m-0 float-right text-secondary">
                     {{$pertanyaan->links()}}

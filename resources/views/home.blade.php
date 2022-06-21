@@ -98,10 +98,8 @@
           <button class="btn-signup">
           <a href="/register">Sign Up</a>
         </button>
-          </div>
-          
-        </div>
-        
+          </div>       
+        </div>        
       </div>
       <!-- akhir info panel -->
 

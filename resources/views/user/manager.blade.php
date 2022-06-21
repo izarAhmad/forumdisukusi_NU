@@ -168,7 +168,6 @@
                alt="Jessica's photo"
                width="200"
                height="200"
-              
               /> 
             </button>
           

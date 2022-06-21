@@ -25,7 +25,6 @@
               </button>
               <input
                 class="search__input focus--box-shadow"
-
                 type="text"
                 name="question"
                 placeholder="Cari Pertanyaan"

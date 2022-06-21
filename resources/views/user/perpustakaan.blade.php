@@ -124,7 +124,6 @@
               type="button"
             >
               <img
-                
                src="{{asset('Admin/images/nu.jpg')}}"
                alt="Jessica's photo"
                width="200"
