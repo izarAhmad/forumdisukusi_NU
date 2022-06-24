@@ -130,7 +130,6 @@
                height="200"
               /> 
             </button>
-             
             <h1 class="profile-main__name">Forum Diskusi NU</h1>
           </div>
           <hr>
